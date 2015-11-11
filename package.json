@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-ortoo-file-opener",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A File Opener Plugin for Cordova. (Modified for file preview on iOS)",
   "cordova": {
     "id": "cordova-plugin-ortoo-file-opener",

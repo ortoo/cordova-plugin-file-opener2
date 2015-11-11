@@ -82,4 +82,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     });
 }
 
+- (UIViewController*) documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
+{
+    return  [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+}
+
 @end

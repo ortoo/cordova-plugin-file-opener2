@@ -57,9 +57,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             docController.delegate = self;
             docController.UTI = uti;
 
-            CGRect rect = CGRectMake(0, 0, 1000.0f, 150.0f);
+            // CGRect rect = CGRectMake(0, 0, 1000.0f, 150.0f);
             CDVPluginResult* pluginResult = nil;
-            BOOL wasOpened = [docController presentOptionsMenuFromRect:rect inView:cont.view animated:NO];
+            // BOOL wasOpened = [docController presentOptionsMenuFromRect:rect inView:cont.view animated:NO];
+            BOOL wasOpened = [docController presentPreviewAnimated:YES];
             //presentOptionsMenuFromRect
             //presentOpenInMenuFromRect
 

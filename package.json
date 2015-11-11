@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-file-opener2",
+  "name": "@ortoo/cordova-plugin-file-opener2",
   "version": "2.0.1",
-  "description": "A File Opener Plugin for Cordova. (The Original Version)",
+  "description": "A File Opener Plugin for Cordova. (Modified for file preview on iOS)",
   "cordova": {
-    "id": "cordova-plugin-file-opener2",
+    "id": "@ortoo/cordova-plugin-file-opener2",
     "platforms": [
       "android",
       "ios",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pwlin/cordova-plugin-file-opener2.git"
+    "url": "https://github.com/ortoo/cordova-plugin-file-opener2.git"
   },
   "keywords": [
     "ecosystem:cordova",
@@ -29,11 +29,11 @@
     }
   ],
   "author": {
-    "name": "pwlin05@gmail.com"
+    "name": "james@ortootech.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pwlin/cordova-plugin-file-opener2/issues"
+    "url": "https://github.com/ortoo/cordova-plugin-file-opener2/issues"
   },
-  "homepage": "https://github.com/pwlin/cordova-plugin-file-opener2#readme"
+  "homepage": "https://github.com/ortoo/cordova-plugin-file-opener2#readme"
 }

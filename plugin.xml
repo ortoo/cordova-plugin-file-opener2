@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-file-opener2" version="2.0.1">
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-ortoo-file-opener" version="2.0.1">
 
-    <name>File Opener2</name>
-    <description>A File Opener Plugin for Cordova. (The Original Version)</description>
+    <name>Ortoo File Opener</name>
+    <description>A File Opener Plugin for Cordova. (Based on file opener2 modified to preview files on iOS)</description>
     <license>MIT</license>
 
     <engines>
@@ -46,7 +46,7 @@
 		</config-file>
 		<source-file src="src/wp8/FileOpener2.cs" />
 	</platform>
-	
+
 
 	 <!-- windows -->
     <platform name="windows">

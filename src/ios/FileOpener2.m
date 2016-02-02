@@ -35,7 +35,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     if (!uti || (NSNull*)uti == [NSNull null]) {
         NSArray *dotParts = [path componentsSeparatedByString:@"."];
         NSString *fileExt = [dotParts lastObject];
-        
+
         uti = (__bridge NSString *)UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)fileExt, NULL);
     }
 
@@ -44,9 +44,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     dispatch_async(dispatch_get_main_queue(), ^{
         // TODO: test if this is a URI or a path
         NSURL *fileURL = [NSURL URLWithString:path];
-        
+
         localFile = fileURL.path;
-        
+
         NSLog(@"looking for file at %@", fileURL);
         NSFileManager *fm = [NSFileManager defaultManager];
         if(![fm fileExistsAtPath:localFile]) {
@@ -63,7 +63,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         self.controller.UTI = uti;
 
         CDVPluginResult* pluginResult = nil;
-        BOOL wasOpened = [docController presentPreviewAnimated:YES];
+        BOOL wasOpened = [self.controller presentPreviewAnimated:YES];
 
         if(wasOpened) {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString: @""];
